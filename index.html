@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <link rel="stylesheet" href="./fun.css">
+</head>
+<body>
+    
+    <pre>
+        <h1>Q1. Create one function with zero parameter having a console statement;</h1>
+        <p>Ans. function no()
+            {
+                let yes 
+                console.log(typeof(yes));
+            }
+            no()
+
+            OUTPUT : undefined</p>
+        <h1>Q2. Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"</h1>
+        <p>Ans. function sum(s1,s2)
+            {
+                console.log(`Sum of ${s1},${s2} is ${s1+s2}`);
+            }
+            sum(3,4)
+
+            OUTPUT : Sum of 3,4 is 7</p>
+        <h1>Q3. Create one arrow function</h1>
+        <p>Ans. onst arfun = (a,b) => a%b
+            console.log(arfun(6,10));
+        
+            OUTPUT : 6</p>
+        <h1>Q4. Print output: 
+            var x = 21;
+            var girl = function () {
+                console.log(x);
+                var x = 20;
+            };
+            girl ();</h1>
+        <p>Ans. OUTPUT : undefined (In function scope variable declaration is happening after the 
+            console part which assigning the value to variable <mark>x</mark> an <mark>Undefined</mark> value which is primitive date type)</p>
+        <h1>Q5. Print output: 
+            var x = 21;
+            girl ();
+            console.log(x)
+            function girl() {
+                console.log(x);
+                var x = 20;
+            };
+            </h1>
+        <p>Ans. OUTPUT : undefined , 21 (In this code we are delcaring varibale x twice and both declaration have different scope first this (var x = 21) variable 
+            have global scope because its declaring outside the function block and another variable (var x = 20) have function scope because its declaring inside the function block
+            . After global declaration girl() function is invoking and will console the x as <mark>undefined</mark> because inside the function variable is declaring after conssole which 
+            assing the x an undefined value and second output will be the <mark>21</mark> because after function calling console is happening where x is taking gloabl variable value.) </p>
+        <h1>Q6. 
+            var x = 21;
+            a();
+            b();
+            
+              function a() {
+                
+               x = 20;
+              console.log(x);
+            };
+             function b() {
+                
+                x = 40;
+               console.log(x);
+            };</h1>
+        <p>Ans. OUTPUT: 20 , 40 (In this code <mark>function a() and b() is invoking </mark>)and both the function have its own 
+        function scopoe variable which is getting console.</p>
+        <h1>Q7. Write a function that accepts parameter n and returns factorial of n</h1>
+        <p>Ans. const fact = (n) => 
+            {
+                let num =1
+                for(let i = 1 ; i &lt= n ; i++)
+                {
+                    num = num * i;
+                }
+                return num
+            }
+            console.log(fact(5));
+            OUTPUT: 120</p>
+        <center>Day 2</center>
+        <h1>Q8.Guess the Output
+
+            function FindSum(a, b){
+                return a + b;
+            }
+            function DisplayData(data, batch){
+                console.log(`i am from ${data} and My batch is EA${batch}`)
+            }
+            DisplayData(""PrepBytes"", FindSum(10, 9));</h1>
+        <p>Ans. OUTPUT: i am from PrepBytes and My batch is EA19</p>
+        <h1>Q9. Guess the output
+            Abc();
+            const Abc = function(){
+                let value = 20;
+                console.log(value);
+            }</h1>
+        <p>Ans. OUTPUT: Error (This funtion is function expression and function expression dont follow hoisting concept thats this 
+            code will give syntax error.)</p>
+        <h1>Q10. Guess the output
+            var a = 10;
+            (function (){
+                console.log(a);
+                var a = 20;
+            })();</h1>
+        <p>Ans. OUTPUT: undefined </p>
+        <h1>Q11. Guess the Output
+            const greet =  function(name){
+                return function(m){
+                    console.log(`Hi!! ${name}, ${m}`);
+                }
+            } 
+            const greet_message = greet('EA19');
+            greet_message("Welcome To PrepBytes")</h1>
+        <p>Ans. OUTPUT: Hi!! EA19, Welcome To PrepBytes</p>
+    </pre>
+
+</body>
+</html>
