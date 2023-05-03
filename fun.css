@@ -8,6 +8,14 @@ body
     background-color: rgb(217, 236, 237);
     padding-left: 60px;
 }
+header
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
 p
 {
     font-size: x-large;
